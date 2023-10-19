@@ -83,6 +83,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+            Button pythagorasButton = findViewById(R.id.pythagorasButton);
+            pythagorasButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    operation = "pythagoras";
+                }
+            });
 
 
 
