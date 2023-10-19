@@ -91,6 +91,31 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+            Button cylinderVolumeButton = findViewById(R.id.cylinderVolumeButton);
+            cylinderVolumeButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    operation = "cylinderVolume";
+                }
+            });
+
+            Button circleAreaButton = findViewById(R.id.circleAreaButton);
+            circleAreaButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    operation = "circleArea";
+                }
+            });
+
+            Button squareRootButton = findViewById(R.id.squareRootButton);
+            squareRootButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    operation = "squareRoot";
+                }
+            });
+
+
 
 
             // Handle Calculate button click

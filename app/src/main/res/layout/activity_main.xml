@@ -8,123 +8,140 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="132dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="502dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="29dp"
         android:text="Result"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintBottom_toTopOf="@+id/percentageButton"
+        app:layout_constraintEnd_toStartOf="@+id/additionButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toTopOf="@+id/additionButton" />
 
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="15dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/additionButton"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
+
 
     <EditText
         android:id="@+id/editTextNumber2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="27dp"
+        android:layout_width="161dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="@+id/additionButton"
+        app:layout_constraintStart_toEndOf="@+id/additionButton"
         tools:ignore="SpeakableTextPresentCheck" />
-
 
     <Button
         android:id="@+id/calculateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="21dp"
         android:text="Calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.742"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintEnd_toStartOf="@+id/circleAreaButton"
+        app:layout_constraintStart_toStartOf="@+id/circleAreaButton"
+        app:layout_constraintTop_toBottomOf="@+id/pythagorasButton" />
 
     <Button
         android:id="@+id/additionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="+"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintBottom_toTopOf="@+id/multiplicationButton"
+        app:layout_constraintEnd_toStartOf="@+id/subtractionButton"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
 
     <Button
         android:id="@+id/subtractionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginEnd="30dp"
         android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/additionButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.362"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintStart_toEndOf="@+id/additionButton" />
 
     <Button
         android:id="@+id/multiplicationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="7dp"
         android:text="*"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/percentageButton"
+        app:layout_constraintStart_toEndOf="@+id/percentageButton" />
 
     <Button
         android:id="@+id/divisionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
         android:text="/"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/multiplicationButton"
+        app:layout_constraintStart_toStartOf="@+id/subtractionButton" />
 
     <Button
         android:id="@+id/percentageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="7dp"
         android:text="%"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.226"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintEnd_toStartOf="@+id/additionButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/pythagorasButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
         android:text="pYt"
+        app:layout_constraintEnd_toStartOf="@+id/circleAreaButton"
+        app:layout_constraintStart_toEndOf="@+id/cylinderVolumeButton"
+        app:layout_constraintTop_toBottomOf="@+id/percentageButton" />
+
+    <Button
+        android:id="@+id/cylinderVolumeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="/|cyliV"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pythagorasButton"
+        app:layout_constraintEnd_toStartOf="@+id/pythagorasButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/circleAreaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ocicle"
+        app:layout_constraintEnd_toStartOf="@+id/squareRootButton"
+        app:layout_constraintStart_toEndOf="@+id/pythagorasButton"
+        app:layout_constraintTop_toTopOf="@+id/pythagorasButton" />
+
+    <Button
+        android:id="@+id/squareRootButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="sQrt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/circleAreaButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintStart_toEndOf="@+id/circleAreaButton" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
